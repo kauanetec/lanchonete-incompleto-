@@ -1,0 +1,85 @@
+int opção, opçãoLanches;
+            double subtotal = 0;
+
+            do
+            {
+                Console.WriteLine("NOME DA LANCHONETE");
+                Console.WriteLine("-------------------------");
+                Console.WriteLine("1- LANCHES E PORÇÕES ");
+                Console.WriteLine("2- BEBIDAS");
+                Console.WriteLine("3- COMBOS");
+                Console.WriteLine("4- FINALIZAÇÃO");
+                opção = Convert.ToInt32(Console.ReadLine());
+
+                if (opção == 1)
+                {
+                    do
+                    {
+                        Console.Clear();
+                        Console.Write("produtos");
+                        Console.Write("-----------------");
+                        Console.Write("1- LANCHE SIMPLES - 5.00");
+                        Console.Write("2- SMASH BURGUER - 7.00");
+                        Console.Write("3- SUPREMO BURGUER - 10.00");
+                        Console.Write("4- QUARTEIRÃO DUPLO - 12.00");
+                        opçãoLanches = Convert.ToInt32(Console.ReadLine());
+
+                        if (opçãoLanches == 1)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 5.00;
+                            Console.WriteLine("Você selecionou o lanche " +
+                                "Simples seu subtotal foi de: " + subtotal);
+                            Console.ReadLine();
+                        }
+
+                        if (opçãoLanches == 2)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 7.00;
+                            Console.WriteLine("Você selecionou o  SMASH " +
+                                "BURGUER seu subtotal foi de: " + subtotal);
+                            Console.ReadLine();
+                        }
+
+                        if (opçãoLanches == 3)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 10.00;
+                            Console.WriteLine("Você selecionou o SUPREMO " +
+                                "BURGUER seu subtotal foi de: " + subtotal);
+                            Console.ReadLine();
+                        }
+
+                        if (opçãoLanches == 4)
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 12.00;
+                            Console.WriteLine("Você selecionou o QUARTEIRÃO " +
+                                "DUPLO seu subtotal foi de: " + subtotal);
+                            Console.ReadLine();
+                        }
+
+                    } while (opçãoLanches != 0);
+
+                }
+
+            } while (opção != 4);
+
+
+
+
+
+                        {
+                            Console.Clear();
+                            subtotal = subtotal + 12.00;
+                            Console.WriteLine("Você selecionou o QUARTEIRÃO " +
+                                "DUPLO seu subtotal foi de: " + subtotal);
+                            Console.ReadLine();
+                        }
+
+                    } while (opçãoLanches != 0);
+
+                }
+
+            } while (opção != 4);
